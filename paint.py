@@ -1,4 +1,4 @@
-""Paint, for drawing shapes.
+"""Paint, for drawing shapes.
 
 Exercises
 
@@ -8,6 +8,7 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 """
+import turtle
 
 from turtle import *
 
@@ -38,7 +39,15 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+
+    radius = ((end.x - start.x)**2 + (end.y - start.y)**2)**0.5
+
+    begin_fill()
+    turtle.circle(radius)
+    end_fill()
 
 
 def rectangle(start, end):
@@ -56,7 +65,7 @@ def tap(x, y):
     start = state['start']
 
     if start is None:
-        state['start'] = vector(x, y)
+        state['start'] = vector(x, y)   
     else:
         shape = state['shape']
         end = vector(x, y)
