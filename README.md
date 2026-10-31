@@ -1,3 +1,5 @@
 # Actividad 1
-1. Agregue lineas de codigo en el documento paint.py, lo que permitio agregar un nuevocolor en el juego 
-2. Agregue lineas de codigo en el documento paint.py, lo que permitio agregar una nueva figura el circulo 
+Adición de un nuevo color en la paleta de opciones.
+Implementación de la función para dibujar un círculo.
+Completar y perfeccionar la función para dibujar el rectángulo.
+Completar y perfeccionar la función para dibujar el triángulo.
